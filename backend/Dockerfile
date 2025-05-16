@@ -4,7 +4,7 @@ FROM node:22-alpine
 WORKDIR /app
 
 
-RUN apk add curl
+RUN apk add --no-cache curl
 
 # Kopiere die package.json und package-lock.json
 COPY package*.json ./
